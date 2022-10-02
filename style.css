@@ -1,7 +1,10 @@
+/* common ----------------------------------------*/
 * {
   font-size: 16px;
+  font-family: "Noto Sans JP light", sans-serif;
 }
 
+/* header ----------------------------------------*/
 header {
   margin: 0 20px;
   display: flex;
@@ -11,9 +14,53 @@ header {
   height: 40px;
 }
 .header__nav {
-  width: 40%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+}
+
+/* topview ---------------------------------------*/
+.topview {
+  margin-top: 20px;
+  position: relative;
+}
+.topview__image {
+  width: fit-content;
+  margin: 0 0 0 auto;
+}
+.topview__image > img {
+  width: 62vw;
+}
+.topview__text {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.topview__text--title {
+  font-size: 4rem;
+  font-family: "Architects Daughter", cursive;
+  color: red;
+}
+.topview__text--title > span {
+  font-size: 4rem;
+  font-family: "Architects Daughter", cursive;
+  color: green;
+}
+.topview__text--subtitle {
+  font-size: 1.3rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  color: red;
+  margin-top: 50px;
+}
+.topview__text--subtitle > span {
+  font-size: 1.2rem;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  color: green;
+}
+.topview__text--description {
+  margin-top: 10px;
 }
