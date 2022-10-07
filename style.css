@@ -352,3 +352,35 @@ header {
   border: grey solid 0.5px;
   padding-left: 10px;
 }
+
+/* linkimage --------------------------------------*/
+.linkimages {
+  margin: 80px 0;
+  width: 100vw;
+  height: 280px;
+  display: flex;
+}
+.recruit {
+  width: 50%;
+  background: url("./img/recruit.png");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.interview {
+  width: 50%;
+  background: url("./img/interview.png");
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.recruit__paragraph {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+.interview__paragraph {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
