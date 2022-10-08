@@ -19,15 +19,17 @@ main {
 /* header ----------------------------------------*/
 header {
   margin: 0 20px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
 }
 .header__logo {
   height: 40px;
+  margin-top: 10px;
 }
 .header__nav {
   color: grey;
-  width: 30%;
+  width: 36%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,6 +37,10 @@ header {
 }
 .header__nav > li > a {
   text-decoration: none;
+}
+.header__nav > li:hover {
+  text-decoration: none;
+  transform: translateY(-5px);
 }
 
 /* topview ---------------------------------------*/
@@ -62,7 +68,7 @@ header {
 .topview__text--title > span {
   font-size: 4rem;
   font-family: "Architects Daughter", cursive;
-  color: green;
+  color: rgb(22, 139, 165);
 }
 .topview__text--subtitle {
   font-size: 1.3rem;
@@ -75,7 +81,7 @@ header {
   font-size: 1.2rem;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: bold;
-  color: green;
+  color: rgb(22, 139, 165);
 }
 .topview__text--description {
   color: grey;
@@ -275,8 +281,11 @@ header {
   margin: 40px 0;
   position: relative;
 }
+.blog-card:hover {
+  transform: translateY(-10px);
+}
 .blog-card__chip {
-  padding: 2px 10px;
+  padding: 8px 14px;
   position: absolute;
   top: 0;
   left: 0;
@@ -307,6 +316,11 @@ header {
 .blog-link {
   text-align: center;
 }
+/* .blog-link__btn:hover {
+  background-color: var(--main-color);
+  border-color: #fff;
+  color: #fff; */
+/* } */
 .blog-link__btn {
   padding: 10px 20px;
   border: 2px solid var(--main-color);
@@ -339,6 +353,7 @@ header {
   width: 640px;
   height: 320px;
   border-collapse: collapse;
+  margin-top: 40px;
 }
 .company-table th {
   background-color: #f2f2f2;
@@ -355,7 +370,7 @@ header {
 .linkimages {
   margin: 80px 0;
   width: 100vw;
-  height: 280px;
+  height: 320px;
   display: flex;
 }
 .recruit {
@@ -397,7 +412,7 @@ header {
 .contact-btn {
   background: linear-gradient(90deg, #fc03aa, var(--main-color));
   width: 256px;
-  padding: 18px 0;
+  padding: 24px 0;
   margin: 0 auto;
   border-radius: 48px;
   position: relative;
