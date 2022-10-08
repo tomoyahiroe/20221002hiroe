@@ -7,12 +7,10 @@
   box-sizing: border-box;
 }
 :root {
-  --main-color: rgb(177, 2, 119);
+  --main-color: #b10277;
 }
 .link {
   text-decoration: none;
-}
-.link:hover {
 }
 main {
   width: 100vw;
@@ -383,4 +381,49 @@ header {
   color: #fff;
   font-size: 24px;
   font-weight: bold;
+}
+
+/* contact -------------------------------------*/
+.contact__paragraph {
+  font-weight: bold;
+  text-align: center;
+}
+.contact__vertical {
+  margin: 20px 0;
+  width: 50%;
+  height: 40px;
+  border-right: var(--main-color) solid 2px;
+}
+.contact-btn {
+  background: linear-gradient(90deg, #fc03aa, var(--main-color));
+  width: 256px;
+  padding: 18px 0;
+  margin: 0 auto;
+  border-radius: 48px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+.contact-btn::before {
+  content: "";
+  background: url("./img/mailicon.svg");
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 32px;
+  height: 32px;
+  transform: translate(0, -50%);
+  background-size: cover;
+}
+
+/* footer ----------------------------------------*/
+footer {
+  background-color: #f2f2f2;
+}
+.footer__copyright {
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 80px;
+  font-size: 14px;
 }
